@@ -22,9 +22,15 @@ export default function Signup() {
               <Form.Label>Password Confirmation</Form.Label>
               <Form.Control type="password" ref={passwordConfirmRef} required />
             </Form.Group>
+            <Button className="w-100" type="submit">
+              Sign Up
+            </Button>
           </Form>
         </Card.Body>
       </Card>
+      <div className="w-100 text-center mt-2">
+        Already have an account? Log in
+      </div>
     </>
   );
 }
