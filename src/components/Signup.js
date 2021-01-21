@@ -34,7 +34,7 @@ export default function Signup() {
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="password" ref={emailRef} required />
+              <Form.Control type="email" ref={emailRef} required />
             </Form.Group>
             <Form.Group id="password">
               <Form.Label>Password</Form.Label>
@@ -44,7 +44,7 @@ export default function Signup() {
               <Form.Label>Password Confirmation</Form.Label>
               <Form.Control type="password" ref={passwordConfirmRef} required />
             </Form.Group>
-            <Button diabled={loading} className="w-100" type="submit">
+            <Button disabled={loading} className="w-100" type="submit">
               Sign Up
             </Button>
           </Form>
